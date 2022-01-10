@@ -1,39 +1,19 @@
-# flask-hello-coursera
+# gcp-flask-ml-deploy
+This is a project to auto-deploy with an ML payload
 
-![flask-web-preview](https://user-images.githubusercontent.com/58792/107861108-7ddbfa80-6e11-11eb-906f-127ea68c50c8.png)
 
-Run Flask and test it out
+[YouTube Walkthrough of GCP Auto-Deploy](https://www.youtube.com/watch?v=_TfWdOvQXwU)
 
-* Open a terminal in Visual Studio Code.
-* cd into the projects directory:  `cd /home/coder/project`
-* install virtualenv:  `python3 -m pip install virtualenv`
-* create a virtualenv: `/home/coder/.local/bin/virtualenv VENV`
-* source the virtualenv (activate it):  `source VENV/bin/activate`
-* cd into the projects directory:  `cd /home/coder/project`
-* source the virtualenv (activate it):  `source VENV/bin/activate`
-* cd into flask project:  `cd /home/coder/project/flask-project`
-* install software:  `make install`
-* run flask:  `python main.py`
 
-You should see something similar to this:
+![Course1-GCP-CD](https://user-images.githubusercontent.com/58792/107860077-64d04b00-6e0b-11eb-8cf2-7cce40496a46.jpg)
 
-```bash
-(VENV) coder@81b962f86a39:~/project/flask-project$ python main.py 
- * Serving Flask app "main" (lazy loading)
- * Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
- * Debug mode: on
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
- * Restarting with stat
- * Debugger is active!
- * Debugger PIN: 325-940-967
- ```
 
-Now open up browser preview and test out the routes.  By typing in the following:
+## Gotchas/How To
 
-http://127.0.0.1:5000/
-http://127.0.0.1:5000/echo/hello
+1.  Fork repo
+2.  Setup trigger in Cloud Build
+3. Make sure you enable these settings
 
-Notice how the print messages in the flask app display in the running logs.
-Try changing the print statements and watch the running application update in real-time.
+![Screen Shot 2020-11-04 at 8 07 18 PM](https://user-images.githubusercontent.com/58792/98184850-610e5d80-1ed9-11eb-9950-6e225675ac2d.png)
+
+*Part of Duke Coursera Course:  Cloud Computing for Data*
